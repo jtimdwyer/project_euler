@@ -5,6 +5,7 @@
 
 
 #the sympy module for this is much faster.
+#I imagine it uses a more modern method!
 
 from math import log
 
