@@ -1,7 +1,10 @@
-#We'll pritn the largest prime factor of the input
+#We'll pritn the largest prime factor of the input n >= 2
 from math import sqrt
 
 def largest_prime_fac(n):
+    if n == 2:
+        return 2
+        
     p = 0
     for div in range(2, int(sqrt(n)) + 1):
         while n % div == 0:
