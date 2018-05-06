@@ -22,11 +22,11 @@ def sieve(n):
         }
         return d[n]
 
-    ran = {*range(2, int(upper_bound) + 1)}
+    ran = [*range(2, int(upper_bound) + 1)]
     which_prime = 0
 
     while which_prime < n:
-        prime = min(ran)
+        prime = ran[0]
         ran = {x for x in ran if x % prime != 0}
         which_prime += 1
 
