@@ -4,7 +4,7 @@ def encrypt(message, secret_key):
     key_len = len(secret_key)
     message = [
         ord(char) ^ ord(secret_key[i % key_len])
-        for i, char in enumerate(message)
+        for i, char in enumeratepy(message)
     ]
     message = ''.join([chr(x) for x in message])
     return message
